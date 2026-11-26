@@ -43,7 +43,7 @@ function App() {
       roomLabel: selectedRoom.name,
       startTime,
       endTime,
-      isAvailable: result.decision === "available",
+      isAvailable: result.isAvailable,
       reasonCode: result.reasonCategory,
       deterministicReason: result.reason,
     };

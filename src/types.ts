@@ -28,6 +28,7 @@ export type ReasonCategory =
   | "ok";
 
 export interface CheckResult {
+  isAvailable: boolean;
   decision: Decision;
   reason: string;
   reasonCategory: ReasonCategory;

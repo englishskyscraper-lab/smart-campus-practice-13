@@ -31,6 +31,7 @@ export function useAvailabilityCheck() {
   const buildResult = (room: Room | null): CheckResult => {
     if (!room || Number.isNaN(startMin) || Number.isNaN(endMin)) {
       return {
+        isAvailable: false,
         decision: "unavailable",
         reasonCategory: "input-error",
         reason: "Please select a room and enter valid times in HH:MM format.",
